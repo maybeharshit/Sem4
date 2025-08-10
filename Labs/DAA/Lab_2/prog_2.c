@@ -4,34 +4,6 @@ Question:Write a program to find GCD using middle school method and analyze its 
 efficiency.
 */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-int isPrime(int k){
-	if(k == 2){
-		return 1;
-	}
-	if (k<=1 || k % 2 == 0){
-		return 0;
-	}
-	
-	for(int i =3;i<=sqrt(k); i+=2){
-		if(k%i == 0){
-			return 0;;
-		}
-	}
-	return 1;
-}
-
-int nprimefac(int k){
-	if(k == 1 || k == 0){
-		return -1;
-	}
-	if(k == 2 || k == 3){
-		return 1;
-	}
-	int count = 0;	
-	for(int i=2;i<=k;i++){
 		int x = i;
 		int temp = k;
 		while(isPrime(x) == 1 && temp % x == 0){
