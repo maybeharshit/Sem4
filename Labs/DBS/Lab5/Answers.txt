@@ -21,9 +21,6 @@ date.
 ->
 WITH Stanford_mngr(pno,deptno,ssn) AS(
 SELECT Pnumber, Dnum, mgr_ssn
-FROM project,department
-WHERE Plocation='Stafford' AND Dnum=Dnumber)
-SELECT pno,deptno,E.Lname, E.Address, E.Bdate
 FROM Stanford_mngr, Employee E
 WHERE Stanford_mngr.ssn=E.SSN;
 
