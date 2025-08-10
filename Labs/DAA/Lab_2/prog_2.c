@@ -14,7 +14,7 @@ efficiency.
 	return count;
 }
 
-int* makearr(int k){
+int* makearr(int k){ shdsduvsud vsdhvf d vfsd bsbsf sdbsd sd vsdjh vs dvsdh vvsd
 	int* a = (int*)malloc(sizeof(int));
 	a[0] = k;
 	if(isPrime(k)){
