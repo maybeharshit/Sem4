@@ -1,27 +1,4 @@
-/*
-Author: Harshit 
-Question:Write a program to find GCD using middle school method and analyze its time
-efficiency.
-*/bhvbufvbusbvushjv sv svbsdkj
-
-		int x = i;
-		int temp = k;
-		while(isPrime(x) == 1 && temp % x == 0){
-			count++;
-			temp /= x;
-		}
-	}
-	return count;
-}
-
-int* makearr(int k){
-	int* a = (int*)malloc(sizeof(int));
-	a[0] = k;
-	if(isPrime(k)){
-		return a;
-	}
-	int no = nprimefac(k);
-	int* arr = (int*)malloc(sizeof(int)*no);
+c(sizeof(int)*no);
 	for(int i = 0;i<no;i++){
 		arr[i] = 0;
 		
