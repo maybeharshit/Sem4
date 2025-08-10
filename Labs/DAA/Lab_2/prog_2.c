@@ -2,7 +2,7 @@
 Author: Harshit 
 Question:Write a program to find GCD using middle school method and analyze its time
 efficiency.
-*/
+*/bhvbufvbusbvushjv sv svbsdkj
 
 #include<stdio.h>
 #include<stdlib.h>
