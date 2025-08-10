@@ -2,27 +2,6 @@
 Smith’. Retrieve the name and address of all employees who work for the 
 ‘Research’ department.
 
-->
-SELECT Bdate, Address 
-FROM employee
-WHERE Fname='John' AND Minit='B' AND Lname='Smith';
-
-SELECT Fname, Address 
-FROM employee 
-WHERE Dno=
-(SELECT Dnumber 
-FROM department 
-WHERE Dname='Research');
-
-2.For every project located in ‘Stanford’, list the project number, the controlling  
-department number, and the department manager’s last name, address, and birth 
-date. 
-
-->
-WITH Stanford_mngr(pno,deptno,ssn) AS(
-SELECT Pnumber, Dnum, mgr_ssn
-FROM Stanford_mngr, Employee E
-WHERE Stanford_mngr.ssn=E.SSN;
 
 3.For each employee, retrieve the employee’s first and last name and the first and 
 last name of his or her immediate supervisor.
